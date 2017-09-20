@@ -1,0 +1,49 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.xlj.myreactapp"
+    },
+    "jhipsterVersion": "4.8.2",
+    "baseName": "myReactApp",
+    "packageName": "com.xlj.myreactapp",
+    "packageFolder": "com/xlj/myreactapp",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "hibernateCache": "no",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "52f65772942bf75ed0b2d172bb7a1920c4b24780",
+    "enableTranslation": true,
+    "languages": [
+      "zh-cn"
+    ]
+  },
+  "generator-jhipster-react": {
+    "promptValues": {
+      "nativeLanguage": "zh-cn"
+    },
+    "clientFramework": "react",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "jhipsterVersion": "0.0.0",
+    "applicationType": "monolith",
+    "baseName": "myReactApp",
+    "testFrameworks": [
+      "gatling"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "zh-cn",
+    "languages": [
+      "zh-cn"
+    ]
+  }
+}

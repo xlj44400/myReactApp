@@ -1,0 +1,13 @@
+{
+  "presets": ["latest","stage-0","react"],
+  "plugins": [
+    ["babel-plugin-module-alias", [
+      { "src": "./src/main/webapp/i18n", "expose": "i18n" }
+    ]]
+  ],
+  "env": {
+    "dev-watch": {
+      "presets": ["react-hmre"]
+    }
+  }
+}

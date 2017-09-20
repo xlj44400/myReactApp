@@ -1,0 +1,15 @@
+version: '2'
+services:
+    myreactapp-app:
+        image: myreactapp
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATA_MONGODB_URI=mongodb://myreactapp-mongodb:27017
+            - SPRING_DATA_MONGODB_DATABASE=myReactApp
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    myreactapp-mongodb:
+        extends:
+            file: mongodb.yml
+            service: myreactapp-mongodb

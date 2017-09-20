@@ -1,0 +1,21 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "1",
+            "fieldValidateRulesMaxlength": 20
+        }
+    ],
+    "dto": "mapstruct",
+    "service": "no",
+    "entityTableName": "foo",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pager"
+}
