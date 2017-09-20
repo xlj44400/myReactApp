@@ -1,4 +1,4 @@
-import globalConfig from '../config';
+import globalConfig from '../../config/config';
 
 /**
  * 日志工具类 <br/>

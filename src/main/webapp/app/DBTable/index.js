@@ -8,7 +8,7 @@ import TableUtils from './TableUtils.js';
 import './index.less';
 import ajax from './utils/ajax';
 import Utils from './utils';
-import globalConfig from './config.js';
+import globalConfig from '../config/config.js';
 import Logger from './utils/Logger';
 import _ from 'lodash';
 
@@ -398,20 +398,18 @@ class DBTable extends React.PureComponent {
     // 3. InnerForm和InnerPagination都是无状态的, 但InnerTable还是要维护自己的一些状态
 
     return (
-      <div style={{width:'90%',marginLeft:"50px"}}>
-        <Spin spinning={this.state.loadingSchema} delay={500}>
-          <InnerForm parentHandleSubmit={this.handleFormSubmit} schema={this.querySchema} tableConfig={this.tableConfig}
-                     tableName={this.tableName}/>
-          <InnerTable data={this.state.data} tableLoading={this.state.tableLoading}
-                      schema={this.dataSchema} refresh={this.refresh}
-                      tableConfig={this.tableConfig} tableName={this.tableName}/>
-          <InnerPagination currentPage={this.state.currentPage} total={this.state.total} pageSize={this.state.pageSize}
-                           parentHandlePageChange={this.handlePageChange} tableConfig={this.tableConfig}
-                           showSizeChanger={this.state.showSizeChanger} pageSizeOptions={this.state.pageSizeOptions}
-                           parentHandleShowPageChange={this.handleShowPageChange}
-                           tableName={this.tableName}/>
-        </Spin>
-      </div>
+      <Spin spinning={this.state.loadingSchema} delay={500}>
+        <InnerForm parentHandleSubmit={this.handleFormSubmit} schema={this.querySchema} tableConfig={this.tableConfig}
+                   tableName={this.tableName}/>
+        <InnerTable data={this.state.data} tableLoading={this.state.tableLoading}
+                    schema={this.dataSchema} refresh={this.refresh}
+                    tableConfig={this.tableConfig} tableName={this.tableName}/>
+        <InnerPagination currentPage={this.state.currentPage} total={this.state.total} pageSize={this.state.pageSize}
+                         parentHandlePageChange={this.handlePageChange} tableConfig={this.tableConfig}
+                         showSizeChanger={this.state.showSizeChanger} pageSizeOptions={this.state.pageSizeOptions}
+                         parentHandleShowPageChange={this.handleShowPageChange}
+                         tableName={this.tableName}/>
+      </Spin>
     );
   }
 

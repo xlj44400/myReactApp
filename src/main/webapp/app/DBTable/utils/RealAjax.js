@@ -1,6 +1,6 @@
 import Logger from './Logger';
 import axios from 'axios';
-import globalConfig from '../config';
+import globalConfig from '../../config/config';
 
 const logger = new Logger('Ajax');
 

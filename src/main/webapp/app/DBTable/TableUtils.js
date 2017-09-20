@@ -1,6 +1,6 @@
 import React from 'react';
 import {notification} from 'antd';
-import globalConfig from './config.js';
+import globalConfig from '../config/config.js';
 import ajax from './utils/ajax';
 import Logger from './utils/Logger';
 

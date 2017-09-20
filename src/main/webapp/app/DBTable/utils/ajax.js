@@ -1,4 +1,4 @@
-import globalConfig from '../config';
+import globalConfig from '../../config/config';
 import MockAjax from './MockAjax';
 import RealAjax from './RealAjax';
 

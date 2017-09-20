@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
 import { Row ,Card,Col,Table,Button,Form, Input,Alert} from 'antd';
-import 'antd/dist/antd.css';
 import $ from 'jquery'
 
 class LoginModal extends Component {

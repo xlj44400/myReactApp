@@ -1,6 +1,6 @@
 {
   "presets": ["latest","stage-0","react"],
-  "plugins": [
+  "plugins": [["import", {"libraryName": "antd", "style": true}],
     ["babel-plugin-module-alias", [
       { "src": "./src/main/webapp/i18n", "expose": "i18n" }
     ]]

@@ -13,7 +13,6 @@ if (typeof require.ensure !== 'function') {
 if (process.env.NODE_ENV !== 'production') {
   /* eslint-disable */
   // Require async routes only in development for react-hot-reloader to work.
-  require('./modules/home/home');
   require('./modules/login/login');
   // require('./modules/account/settings');
   // require('./modules/account/password');
@@ -46,7 +45,7 @@ export default (onLogout) => {
       <IndexRoute
         getComponent={(nextState, cb) => {
           require.ensure([], (require) => {
-            cb(null, require('./modules/home/home').default);
+            cb(null, require('./shared/components/welcome').default);
           });
         }}
       />
@@ -67,8 +66,9 @@ export default (onLogout) => {
           });
         }}
       />
-
-      <Route path="option1" tableName="test" getComponent={DBTableContainer}/>
+      <Route path="index">
+        <Route path="option1" tableName="test" getComponent={DBTableContainer}/>
+      </Route>
 
       {/*
       <Route
