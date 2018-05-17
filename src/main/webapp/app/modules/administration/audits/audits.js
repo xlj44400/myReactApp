@@ -22,6 +22,10 @@ export class AuditsPage extends Component {
     this.props.getAudits();
   }
 
+  async test(){
+      let result = await new ajax().get("url");
+  }
+
   getAuditList() {
     if (!this.props.isFetching) {
       this.props.getAudits();
