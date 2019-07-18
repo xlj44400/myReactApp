@@ -75,7 +75,7 @@
     "stripcomment-loader": "^0.1.0",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "2.3.0",
+    "webpack-dev-server": "3.1.11",
     "webpack-merge": "2.6.1"
   },
   "engines": {
