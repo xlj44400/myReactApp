@@ -7,7 +7,7 @@
     "node_modules"
   ],
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.18.1",
     "counterpart": "^0.17.2",
     "deep-equal": "^1.0.1",
     "flexboxgrid": "^6.3.1",
